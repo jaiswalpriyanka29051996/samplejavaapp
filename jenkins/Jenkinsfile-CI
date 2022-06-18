@@ -12,7 +12,6 @@ pipeline {
 	   steps {
                 echo 'codereview..'
 		sh script: '/usr/share/maven/bin/mvn -P metrics pmd:pmd'
-           }
            }		
         }
         stage('unit-test') {
